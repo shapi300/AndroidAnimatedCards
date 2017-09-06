@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="1dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_background"
+                android:src="@drawable/bvs_bg"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:transitionName="selectedMovie"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:alpha=".4"
+                android:id="@+id/vw_blacklayer" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:id="@+id/img_cover_d"
+                android:src="@drawable/bvs"
+                android:scaleType="centerCrop"
+                app:riv_border_width="2dip"
+                app:riv_border_color="#ffffff"
+                android:layout_marginBottom="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginStart="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Batman Vs Superman"
+                android:id="@+id/txt_movie_details"
+                android:singleLine="true"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_alignTop="@+id/img_cover_d"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@id/img_cover_d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="It&apos;s been nearly two years since Superman&apos;s (Henry Cavill) colossal battle with Zod (Michael Shannon) devastated the city of Metropolis."
+                android:id="@+id/txt_plot_d"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:lines="3"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/txt_movie_details"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@+id/img_cover_d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="o Release date: March 25, 2016"
+                android:id="@+id/txt_release_d"
+                android:textColor="#ffffff"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:layout_below="@+id/txt_plot_d"
+                android:layout_toRightOf="@+id/img_cover_d"
+                android:layout_toEndOf="@+id/img_cover_d" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
