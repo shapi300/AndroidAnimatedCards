@@ -2,7 +2,7 @@
 
 All credit goes to Yasir Ameen for code and the design.
 
-I followed tutorial and did some changes to the code. 
+
 
 
 
